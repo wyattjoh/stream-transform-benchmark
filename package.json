@@ -1,0 +1,14 @@
+{
+  "name": "stream-transform-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "@types/bun": "latest"
+  }
+}
