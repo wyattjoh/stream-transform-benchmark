@@ -5,7 +5,7 @@ import { spawn } from "node:child_process";
 import { servers } from "./server.mjs";
 
 const ITERATIONS = 200;
-const CONCURRENCY = 3;
+const CONCURRENCY = 2;
 
 const groups = ITERATIONS / CONCURRENCY;
 
@@ -16,14 +16,30 @@ if (!process.argv[2]) {
 
 const file = await fs.readFile(process.argv[2]);
 
+console.log(`ITERATIONS = ${ITERATIONS}\nCONCURRENCY = ${CONCURRENCY}`);
+
 for (const server of servers) {
-  console.log(`Benchmarking ${server.name}...`);
+  console.log(`Benchmarking Server[${server.name}]...`);
 
-  const p = spawn(process.argv[0], ["server.mjs", server.name], {
-    stdio: "inherit",
+  const p = spawn(process.argv[0], ["server.mjs", server.name]);
+
+  await new Promise((resolve) => {
+    /**
+     * @param {Buffer} data
+     */
+    const onData = (data) => {
+      const message = data.toString().trim();
+
+      if (
+        message === `Server[${server.name}] listening on port ${server.port}`
+      ) {
+        p.stdout?.off("data", onData);
+        resolve(null);
+      }
+    };
+
+    p.stdout?.on("data", onData);
   });
-
-  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   /**
    * @type {number[]}
