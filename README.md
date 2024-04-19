@@ -1,6 +1,7 @@
 # stream-transform-benchmark
 
-You can run the benchmark suite using any JS runtime:
+You can run the benchmark suite using any JS runtime. This was created to
+benchmark the impact of measuring the body size.
 
 ```sh
 # Create a large test file
