@@ -26,53 +26,43 @@ Tests were performed using Bun v1.1.3.
 Benchmarking raw...
 Filtering servers by raw
 Server[raw] listening on port 3003
-  Total time: 11727.70745400002ms
-  Average time: 58.6385372700001ms
-  50th percentile: 60.404709000000366ms
-  75th percentile: 70.32966699999997ms
-  95th percentile: 83.04362500000025ms
-  99th percentile: 90.8314170000001ms
-  Slowest time: 97.75795800000014ms
+  Total time: 12165.096547999998ms
+  Average time: 60.82548273999999ms
+  50th percentile: 63.33820899999955ms
+  75th percentile: 70.68404199999986ms
+  95th percentile: 86.1765419999997ms
+  99th percentile: 92.62195899999983ms
+  Slowest time: 103.63004099999989ms
 Benchmarking stream...
 Filtering servers by stream
 Server[stream] listening on port 3004
-  Total time: 14353.43758399999ms
-  Average time: 71.76718791999996ms
-  50th percentile: 74.92595900000015ms
-  75th percentile: 90.23795900000005ms
-  95th percentile: 101.14154200000121ms
-  99th percentile: 113.13966699999946ms
-  Slowest time: 124.69024999999965ms
+  Total time: 11253.881202999994ms
+  Average time: 56.269406014999966ms
+  50th percentile: 56.95741699999962ms
+  75th percentile: 70.4286659999998ms
+  95th percentile: 75.34304100000008ms
+  99th percentile: 89.04037499999868ms
+  Slowest time: 101.14845799999966ms
 Benchmarking raw-web...
 Filtering servers by raw-web
 Server[raw-web] listening on port 3005
-  Total time: 11558.421302000008ms
-  Average time: 57.79210651000004ms
-  50th percentile: 59.24150000000009ms
-  75th percentile: 73.04758299999958ms
-  95th percentile: 77.6817919999994ms
-  99th percentile: 82.05033299999923ms
-  Slowest time: 112.0580829999999ms
+  Total time: 14189.097708000041ms
+  Average time: 70.94548854000021ms
+  50th percentile: 73.53629200000069ms
+  75th percentile: 89.9163750000007ms
+  95th percentile: 102.7435000000005ms
+  99th percentile: 107.32895800000188ms
+  Slowest time: 108.44770900000003ms
 Benchmarking web...
 Filtering servers by web
 Server[web] listening on port 3006
-  Total time: 13944.80162499999ms
-  Average time: 69.72400812499994ms
-  50th percentile: 71.64208399999916ms
-  75th percentile: 87.42299999999886ms
-  95th percentile: 99.48020800000086ms
-  99th percentile: 115.38420899999983ms
-  Slowest time: 122.68074999999953ms
-Benchmarking web-high-water-mark...
-Filtering servers by web-high-water-mark
-Server[web-high-water-mark] listening on port 3007
-  Total time: 12178.385005999957ms
-  Average time: 60.89192502999978ms
-  50th percentile: 62.33425000000352ms
-  75th percentile: 76.77945800000452ms
-  95th percentile: 82.84975000000122ms
-  99th percentile: 90.32458300000144ms
-  Slowest time: 97.60870799999975ms
+  Total time: 14245.093466999999ms
+  Average time: 71.22546733499999ms
+  50th percentile: 74.94625000000087ms
+  75th percentile: 90.32145899999887ms
+  95th percentile: 99.6997080000001ms
+  99th percentile: 105.92312500000116ms
+  Slowest time: 109.62416700000176ms
 ```
 
 ### Node
@@ -83,51 +73,41 @@ Tests were performed using Node.js v20.10.0.
 Benchmarking raw...
 Filtering servers by raw
 Server[raw] listening on port 3003
-  Total time: 6235.622835934162ms
-  Average time: 31.17811417967081ms
-  50th percentile: 31.087291955947876ms
-  75th percentile: 33.050832986831665ms
-  95th percentile: 35.806500017642975ms
-  99th percentile: 45.15275001525879ms
-  Slowest time: 51.2404580116272ms
+  Total time: 6076.753631472588ms
+  Average time: 30.383768157362937ms
+  50th percentile: 30.325250029563904ms
+  75th percentile: 32.18270796537399ms
+  95th percentile: 34.84395897388458ms
+  99th percentile: 56.436374962329865ms
+  Slowest time: 64.27824997901917ms
 Benchmarking stream...
 Filtering servers by stream
 Server[stream] listening on port 3004
-  Total time: 6129.22315788269ms
-  Average time: 30.646115789413454ms
-  50th percentile: 30.859332978725433ms
-  75th percentile: 32.8806249499321ms
-  95th percentile: 37.12883299589157ms
-  99th percentile: 68.42662501335144ms
-  Slowest time: 69.21875ms
+  Total time: 6548.548506319523ms
+  Average time: 32.742742531597614ms
+  50th percentile: 32.854667007923126ms
+  75th percentile: 34.899167001247406ms
+  95th percentile: 38.27366703748703ms
+  99th percentile: 49.95008397102356ms
+  Slowest time: 56.798166036605835ms
 Benchmarking raw-web...
 Filtering servers by raw-web
 Server[raw-web] listening on port 3005
-  Total time: 8456.210660338402ms
-  Average time: 42.28105330169201ms
-  50th percentile: 37.048624992370605ms
-  75th percentile: 40.971000015735626ms
-  95th percentile: 52.72720801830292ms
-  99th percentile: 323.5063329935074ms
-  Slowest time: 327.8240000009537ms
+  Total time: 6458.272747337818ms
+  Average time: 32.29136373668909ms
+  50th percentile: 33.59062498807907ms
+  75th percentile: 35.25479197502136ms
+  95th percentile: 38.17754203081131ms
+  99th percentile: 79.8333330154419ms
+  Slowest time: 86.52508395910263ms
 Benchmarking web...
 Filtering servers by web
 Server[web] listening on port 3006
-  Total time: 6725.078011333942ms
-  Average time: 33.625390056669715ms
-  50th percentile: 33.85437500476837ms
-  75th percentile: 35.90141695737839ms
-  95th percentile: 41.02208399772644ms
-  99th percentile: 99.51587498188019ms
-  Slowest time: 100.9012919664383ms
-Benchmarking web-high-water-mark...
-Filtering servers by web-high-water-mark
-Server[web-high-water-mark] listening on port 3007
-  Total time: 7774.229538977146ms
-  Average time: 38.87114769488573ms
-  50th percentile: 38.02608299255371ms
-  75th percentile: 39.853582978248596ms
-  95th percentile: 44.669458985328674ms
-  99th percentile: 105.69700002670288ms
-  Slowest time: 106.15604203939438ms
+  Total time: 7003.671169519424ms
+  Average time: 35.01835584759712ms
+  50th percentile: 35.586958050727844ms
+  75th percentile: 37.694166004657745ms
+  95th percentile: 41.45366698503494ms
+  99th percentile: 78.9548749923706ms
+  Slowest time: 80.06737500429153ms
 ```
